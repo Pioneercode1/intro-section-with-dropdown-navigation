@@ -71,7 +71,7 @@ body {
 /*style menu*/
 .menu-content {
     position: absolute;
-    inset: 0 0 0 30%;
+    inset: 0 0 0 35%;
     background-color: var(--gray-50);
     box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.7);
     z-index: 999;
@@ -87,6 +87,8 @@ body {
     background-color: transparent;
     outline: none;
     border: none;
+    display: block;
+    margin-left: auto;
 }
 
 .icon-close {
@@ -94,6 +96,14 @@ body {
     height: 28px;
     margin-block-end: 1.7rem;
 
+}
+
+.icon-close:hover,  .btn-menu:hover, .btn-main:hover {
+    cursor: pointer;
+}
+
+.icon-close:focus,  .btn-menu:focus, .btn-main:focus {
+    outline: 2px solid var(--muted-blue);
 }
 
 .ul-menu,
@@ -109,6 +119,11 @@ body {
 
 .ul-menu li:hover {
     cursor: pointer;
+    color: var(--gray-950);
+}
+
+.ul-menu li:focus {
+    color: var(--gray-950);
 }
 
 .ul-menu .ul-features,
@@ -143,8 +158,8 @@ body {
 }
 
 .menu-sub-features img {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     margin-right: 1rem;
 }
 
@@ -158,10 +173,6 @@ body {
     transform: rotate(180deg);
 }
 
-.ul-menu li:hover {
-    color: var(--gray-950);
-}
-
 .menu-sub-features a, .menu-sub-company a {
     text-decoration: none;
     display: flex;
@@ -171,6 +182,10 @@ body {
 }
 
 .menu-sub-features a:hover, .menu-sub-company a:hover {
+    color: var(--gray-950);
+}
+
+.menu-sub-features a:focus, .menu-sub-company a:focus {
     color: var(--gray-950);
 }
 
