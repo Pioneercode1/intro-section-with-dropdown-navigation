@@ -10,6 +10,7 @@
 
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
   <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
 
 </head>
 
@@ -27,11 +28,34 @@
   </header>
 
   <div class="menu-content">
-    <img class="icon-close" src="./images/icon-close-menu.svg" alt="icon close menu" width="28" height="28">
+    <button class="btn-icon-close">
+      <img class="icon-close" src="./images/icon-close-menu.svg" alt="icon close menu" width="28" height="28">
+    </button>
     <nav>
       <ul class="ul-menu">
-        <li class="li-features">Features</li>
-        <li class="li-company">Company</li>
+        <ul class="ul-features">
+          <li class="li-features">
+            <span>Features</span>
+            <img src="./images/icon-arrow-down.svg" alt="icon arrow down">
+            <div class="menu-sub-features">
+              <a><img src="./images/icon-todo.svg" alt="icon todo list"><span>Todo List</span></a>
+              <a><img src="./images/icon-calendar.svg" alt="icon calendar"><span>Calendar</span></a>
+              <a><img src="./images/icon-reminders.svg" alt="icon reminders"><span>Reminders</span></a>
+              <a><img src="./images/icon-planning.svg" alt="icon planning"><span>Planning</span></a>
+            </div>
+          </li>
+        </ul>
+        <ul class="ul-company">
+          <li class="li-company">
+            <span>Company</span>
+            <img src="./images/icon-arrow-down.svg" alt="icon arrow down">
+            <div class="menu-sub-company">
+              <a>History</a>
+              <a>Our Team</a>
+              <a>Blog</a>
+            </div>
+          </li>
+        </ul>
         <li class="li-careers">Careers</li>
         <li class="li-about">About</li>
       </ul>

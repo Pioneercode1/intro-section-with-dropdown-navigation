@@ -73,19 +73,133 @@ body {
     position: absolute;
     inset: 0 0 0 30%;
     background-color: var(--gray-50);
-    box-shadow: 8px 8px 300px 10px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.7);
     z-index: 999;
-    padding: 1rem;
+    padding: 1.5rem;
+    display: none;
+}
+
+.menu-content.active {
+    display: block;
+}
+
+.btn-icon-close {
+    background-color: transparent;
+    outline: none;
+    border: none;
 }
 
 .icon-close {
     width: 28px;
     height: 28px;
-    margin-block-end: 2rem;
+    margin-block-end: 1.7rem;
+
 }
 
-.ul-menu {
+.ul-menu,
+.ul-features,
+.ul-company {
     list-style: none;
+}
+
+.ul-menu li {
+    margin-block-end: 1.3rem;
+    color: var(--gray-500);
+}
+
+.ul-menu li:hover {
+    cursor: pointer;
+}
+
+.ul-menu .ul-features,
+.ul-menu .ul-company {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.li-features,
+.li-company {
+    position: relative;
+}
+
+.menu-sub-features,
+.menu-sub-company {
+    position: static;
+    inset: 1rem 1rem;
+    width: auto;
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    margin-block: 1rem;
+    padding-left: 1.5rem;
+    color: var(--gray-500);
+}
+
+.menu-sub-features.active, .menu-sub-company.active {
+    display: flex;
+}
+
+.menu-sub-features img {
+    width: 24px;
+    height: 24px;
+    margin-right: 1rem;
+}
+
+.li-features img,
+.li-company img {
+    transition: transform 0.3s ease;
+}
+
+.li-features.active img[alt="icon arrow down"],
+.li-company.active img[alt="icon arrow down"] {
+    transform: rotate(180deg);
+}
+
+.ul-menu li:hover {
+    color: var(--gray-950);
+}
+
+.menu-sub-features a, .menu-sub-company a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: var(--gray-500);
+    transition: color 0.3s;
+}
+
+.menu-sub-features a:hover, .menu-sub-company a:hover {
+    color: var(--gray-950);
+}
+
+.btn-content {
+    margin-block-start: 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: .9rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-content button {
+    width: 100%;
+    padding: .6rem;
+    background-color: var(--gray-50);
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    font-size: var(--font-size-p);
+    color: var(--gray-500);
+}
+
+.btn-content .btn-register {
+    outline: 2px solid var(--gray-950);
+}
+
+.btn-content button:hover {
+    cursor: pointer;
 }
 
 .app-container {
