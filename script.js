@@ -18,8 +18,19 @@ companyBtn.addEventListener('click', () => {
 
 menuBtnOpen.addEventListener("click", () => {
     menuContent.classList.toggle('active');
-})
+});
 
 menuBtnClose.addEventListener("click", () => {
     menuContent.classList.toggle('active');
-})
+});
+
+window.addEventListener('click', (e) => {
+    if (!featuresBtn.contains(e.target) && !featuresSubMenu.contains(e.target)) {
+        featuresSubMenu.classList.remove('active');
+        featuresBtn.classList.remove('active');
+    }
+    if (!companyBtn.contains(e.target) && !companySubMenu.contains(e.target)) {
+        companySubMenu.classList.remove('active');
+        companyBtn.classList.remove('active');
+    }
+});
