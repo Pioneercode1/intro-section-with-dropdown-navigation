@@ -423,7 +423,7 @@ body {
     .header {
         grid-area: header;
         padding-block-start: 3rem;
-        padding-inline: 2rem;
+        padding-inline: 2rem 1rem;
     }
 
     .nav-container {
@@ -467,14 +467,14 @@ body {
 
     .app-container .btn-main {
         display: block;
-        margin: .5rem 2.8rem 5rem 2.8rem !important;
+        margin: 1rem 2.8rem 5rem 2.8rem !important;
         padding: .9rem;
         width: 45%;
     }
 
     .footer-main {
         grid-area: footer;
-        margin-top: -8rem;
+        margin-top: -2rem;
         margin-left: -3rem;
     }
 
@@ -485,7 +485,6 @@ body {
         align-items: center;
         column-gap: 2rem;
         padding-inline-start: 6.5rem;
-        margin-block-start: 5rem;
     }
 
     .img-footer img {
