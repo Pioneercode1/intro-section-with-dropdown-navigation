@@ -43,7 +43,7 @@ body {
     height: 3rem;
     padding-inline: 1rem;
     padding-block: 2rem;
-    background-color: var(--white);
+    background-color: var(--gray-50);
 }
 
 .logo-img-container {
