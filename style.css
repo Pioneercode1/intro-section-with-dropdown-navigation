@@ -253,6 +253,12 @@ body {
     font-weight: 700;
 }
 
+.btn-main:hover {
+    background-color: transparent;
+    color: var(--gray-950);
+    outline: 2px solid var(--gray-500);
+}
+
 .app-container .hero-content {
     padding-inline: 1rem;
 }
@@ -459,11 +465,12 @@ body {
 
     .img-hero {
         grid-area: image;
-        width: 90%;
-        height: 100%;
+        width: 80%;
+        height: 80%;
         justify-self: center;
         margin: 0px;
-        object-fit: cover;
+        object-fit: contain;
+        margin-top: 2rem;
     }
 
     .app-container .btn-main {
@@ -475,7 +482,7 @@ body {
 
     .footer-main {
         grid-area: footer;
-        margin-top: -2rem;
+        margin-top: -8rem;
         margin-left: -3rem;
     }
 
